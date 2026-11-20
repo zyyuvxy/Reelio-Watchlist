@@ -1,0 +1,28 @@
+{
+  "name": "reelio-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reelio - Personal watchlist web application for movies and series",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run start:dev --workspace=apps/api",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "build:api": "npm run build --workspace=apps/api",
+    "build:web": "npm run build --workspace=apps/web",
+    "build": "npm run build:api && npm run build:web",
+    "test:api": "npm run test --workspace=apps/api",
+    "test": "npm run test:api",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "keywords": [
+    "reelio",
+    "watchlist",
+    "movies",
+    "series",
+    "indie-cinema"
+  ],
+  "author": "Reelio Team",
+  "license": "ISC"
+}

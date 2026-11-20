@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-cherry-rose: #B5185F;
+  --color-light-yellow: #FEFFE0;
+  --color-lime-cream: #D0E86E;
+  --color-strong-cyan: #35C1C2;
+  --color-plum-ink: #241B21;
+  --color-soft-neutral: #E7DDE2;
+}
+
+body {
+  background-color: #FEFFE0;
+  color: #241B21;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  min-height: 100vh;
+}
+
+/* Custom retro styling helpers */
+.ticket-border {
+  border: 2px solid #241B21;
+  box-shadow: 4px 4px 0px 0px #241B21;
+}
+
+.ticket-border-sm {
+  border: 2px solid #241B21;
+  box-shadow: 2px 2px 0px 0px #241B21;
+}
+
+.ticket-border-interactive {
+  border: 2px solid #241B21;
+  box-shadow: 4px 4px 0px 0px #241B21;
+  transition: all 0.15s ease-in-out;
+}
+
+.ticket-border-interactive:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #241B21;
+}
+
+.ticket-border-interactive:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #241B21;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FEFFE0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E7DDE2;
+  border: 1px solid #241B21;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B5185F;
+}
